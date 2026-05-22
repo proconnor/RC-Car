@@ -11,6 +11,7 @@ RUN apt-get update \
         cmake \
         pkg-config \
         libzmq3-dev \
+        cppzmq-dev \
         libprotobuf-dev \
         protobuf-compiler \
         libsdl2-dev \

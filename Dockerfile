@@ -30,7 +30,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
         libzmq5 \
-        libprotobuf25 \
+        libprotobuf32 \
         libsdl2-2.0-0 \
         ca-certificates \
     && rm -rf /var/lib/apt/lists/*

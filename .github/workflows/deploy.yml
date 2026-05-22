@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}/scout-service
+  IMAGE_NAME: proconnor/rc-car/scout-service
 
 jobs:
   build-and-push:

@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package car;
+
+message ControlCommand {
+  float speed = 1;   // -1.0 to 1.0
+  float steer = 2;   // -1.0 to 1.0
+}
+
+message Telemetry {
+  float x = 1;                // meters
+  float y = 2;                // meters
+  float heading = 3;          // radians
+  float measured_speed = 4;            // m/s
+  float steering_angle = 5;   // radians
+  float battery_voltage = 6;
+  uint64 timestamp_ns = 7;
+}

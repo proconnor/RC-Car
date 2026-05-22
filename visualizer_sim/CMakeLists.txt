@@ -20,4 +20,4 @@ execute_process(COMMAND ${SDL2_CONFIG} --libs
     OUTPUT_STRIP_TRAILING_WHITESPACE)
 
 target_compile_options(visualizer_sim PRIVATE ${SDL2_CFLAGS})
-target_link_libraries(visualizer_sim PRIVATE ${SDL2_LIBS} zmq ${Protobuf_LIBRARIES})
+target_link_libraries(visualizer_sim PRIVATE ${SDL2_LIBS} ${ZeroMQ_LIBRARIES} ${Protobuf_LIBRARIES})

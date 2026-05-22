@@ -4,5 +4,5 @@ add_executable(car_sim
 )
 
 target_link_libraries(car_sim
-    PRIVATE zmq ${Protobuf_LIBRARIES}
+    PRIVATE ${ZeroMQ_LIBRARIES} ${Protobuf_LIBRARIES}
 )

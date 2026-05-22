@@ -10,5 +10,5 @@ target_include_directories(controller_sim
 )
 
 target_link_libraries(controller_sim
-    PRIVATE zmq ${Protobuf_LIBRARIES}
+    PRIVATE ${ZeroMQ_LIBRARIES} ${Protobuf_LIBRARIES}
 )

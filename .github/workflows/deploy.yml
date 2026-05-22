@@ -1,8 +1,8 @@
 name: Build and Push RC Car Docker Images
 
 on:
-  push:
-    branches: [ main ]
+  push: {}
+  pull_request: {}
 
 env:
   REGISTRY: ghcr.io

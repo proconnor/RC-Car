@@ -7,9 +7,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(visualizer_sim src/main.cpp src/telemetry_receiver.cpp ${CMAKE_SOURCE_DIR}/proto/messages.pb.cc)
 
 # Find SDL2 using sdl2-config
-find_program(SDL2_CONFIG sdl2-config HINTS /usr/local/bin)
+find_program(SDL2_CONFIG NAMES sdl2-config)
 if(NOT SDL2_CONFIG)
-    message(FATAL_ERROR "sdl2-config not found in /usr/local/bin")
+    message(FATAL_ERROR "sdl2-config not found in PATH")
 endif()
 
 execute_process(COMMAND ${SDL2_CONFIG} --cflags

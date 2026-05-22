@@ -1,0 +1,17 @@
+build
+.git
+.gitignore
+.github
+*.swp
+*.swo
+*.DS_Store
+*.o
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+**/build
+**/CMakeFiles
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/Makefile
